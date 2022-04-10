@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+#include <sstream>  
+using namespace std;
+int main()
+{
+    //char str[] = "Geeks-for-Geeks";
+    string str;
+    getline(cin,str);
+ 
+    stringstream ss(str);
+    const char delim = '.';
+    string words;
+    while(getline(ss,words,delim)){
+   	    cout<<words<<endl;
+    }
+    return 0;
+}
